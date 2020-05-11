@@ -24,7 +24,7 @@ contract Counter is GSNRecipient {
         return _approveRelayedCall();
     }
 
-    // We won't do any pre or post processing, so leave _preRelayedCall and _postRelayedCall empty
+    // No pre or post processing, so leave _preRelayedCall and _postRelayedCall empty
     function _preRelayedCall(bytes memory context) internal returns (bytes32) {
     }
 
